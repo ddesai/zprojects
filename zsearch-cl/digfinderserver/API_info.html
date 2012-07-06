@@ -1,0 +1,45 @@
+
+<html>
+<style>
+
+body { text-indent: 10%; font-size:18px;}
+h1 { text-indent: 25%; }
+h2 { text-indent: 10%; font-size:22px; color: #50503E;}
+p {text-indent: 10%;}
+
+</style>
+</head>
+
+
+<body background="
+http://digfinder.googlecode.com/hg/androidClient/res/drawable-hdpi/whitebricks.gif">
+
+<h1><img src="
+http://digfinder.googlecode.com/hg/androidClient/res/drawable-hdpi/digfinder_icon.png" alt="image"/>
+<font color="blue">DigFinder Web Services API</font>
+</h1><br><br>
+<h2>Craigslist Housing search request:</h2>
+
+
+<p>
+JSON Example: <a href="http://localhost:8080/digfinderserver/search/area=sby&nh=santa clara&bedrooms=4">
+http://localhost:8080/digfinderserver/search/<font color="red">area=sby&nh=santa clara&bedrooms=4</font></a> <br><br>
+</p>
+
+<font style="italic">
+Default output format is JSON. A request for XML output has the following form:</font>
+<br>
+<p>
+XML Example: <a href="http://localhost:8080/digfinderserver/search/xml/area=sby&nh=santa clara&bedrooms=4">
+http://localhost:8080/digfinderserver/search/<font color="blue" style="bold">xml</font>/<font color="red" style="bold">area=sby&nh=santa clara&bedrooms=4</font></a> <br>
+</p>
+
+<br>
+<h2>Craigslist Housing neighborhood list request:</h2>
+JSON Example: <a href="http://localhost:8080/digfinderserver/nhoods">http://localhost:8080/digfinderserver/nhoods</a>
+<br>
+<p>
+XML Example: <a href="http://localhost:8080/digfinderserver/xml/nhoods">http://localhost:8080/digfinderserver/<font color="blue" style="bold">xml</font>/nhoods</a>
+</p>
+</body>
+</html>

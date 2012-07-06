@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, TestProjectActivity!</string>
+    <string name="app_name">DigFinder</string>
+    <string name="myname">Darshan</string>
+    <string name="area_label">Area</string>
+    <string name="nh_label">Neighborhood</string>
+    <string name="maxPrice_label">Max Price</string>
+    <string name="bedrooms_label">Bedrooms</string>
+    <string-array name="areas_array">
+    	<item>all areas</item>
+    	<item>"san francisco"</item>
+        <item>"southbay"</item>
+        <item>"eastbay"</item>
+        <item>"penninsula"</item>
+        <item>"northbay"</item>
+        <item>"santa cruz"</item>
+        </string-array>
+</resources>

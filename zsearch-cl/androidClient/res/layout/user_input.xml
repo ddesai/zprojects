@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebricks">
+ 
+ <ImageView
+        android:id="@+id/digfinderLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/digfinder_logo" 
+        android:paddingBottom="10dp"/>
+        
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="3"
+	android:layout_below="@id/digfinderLogo">
+
+	<TableRow>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="@string/area_label" 
+			android:textStyle="bold"
+			android:textColor="#005eb2"
+			android:padding="10dip"/>
+		<Spinner 
+        android:id="@+id/area_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_span="2"/>
+	</TableRow>
+	
+	<TableRow>
+		<TextView 
+		    android:id="@+id/nh_textview"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="@string/nh_label"
+			android:textStyle="bold"
+			android:textColor="#005eb2"
+			android:padding="10dip"/>
+		<Spinner 
+        android:id="@+id/nh_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_span="2"/>
+	</TableRow>	
+	
+	<TableRow>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="@string/maxPrice_label"
+			android:textStyle="bold"
+			android:textColor="#005eb2"
+			android:padding="10dip" />
+
+		<EditText android:id="@+id/maxPrice_textbox"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" 
+			android:layout_span="2"/>
+
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="@string/bedrooms_label" 
+			android:textStyle="bold"
+			android:textColor="#005eb2"
+			android:padding="10dip"/>
+		<TextView android:id="@+id/seekbar_value"
+			android:layout_width="20dip"
+			android:layout_height="wrap_content" 
+			android:textStyle="bold"
+			android:textColor="#005eb2"/>
+		<SeekBar android:id="@+id/bedrooms_seekbar"
+			android:layout_width="170dp"
+			android:layout_height="wrap_content"
+			android:max="8"
+			android:minWidth="190px"  />
+	</TableRow>		
+	
+	<TableRow android:paddingLeft="8dip">
+		 <CheckBox android:id="@+id/cats_checkbox"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Cats"
+        	android:textStyle="bold"
+			android:textColor="#005eb2"
+			android:textSize="14dp" 
+			android:paddingRight="20dip"/>
+        <CheckBox android:id="@+id/dogs_checkbox"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Dogs" 
+        	android:textStyle="bold"
+			android:textColor="#005eb2"
+			android:textSize="14dp"
+			android:layout_span="2"/>
+	</TableRow>	
+	
+	<TableRow android:paddingTop="20dp">  
+        <Button android:id="@+id/search_button" 
+			android:text="Search"
+			android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_span="3"/> 
+	</TableRow>
+
+</TableLayout>
+</RelativeLayout>
