@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:apiKey="0wxlgvKj58M3IHUcWfZZau1BLjV826vhIfmLWxQ"
+/>
+<!-- Hanh  "0Id0kTAlpsFBTf5D_g2j9PGOvJ7bp_Go7oiJQsg" --> 
+<!-- Christine  "0Ll1wbqDlTfMyPfutXIH-XBYOtYYAAtGxetc9iA" -->
+<!-- Darshan  "0wxlgvKj58M3IHUcWfZZau1BLjV826vhIfmLWxQ" -->
+<!-- Promila  "0S3QZvjRSuLKleeqYvwmuPVyPqgPPpDliFuYxIg" -->
