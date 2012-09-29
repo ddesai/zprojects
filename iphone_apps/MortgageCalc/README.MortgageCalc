@@ -1,0 +1,57 @@
+Mortgage Calculator
+===================
+
+Description
+===========
+
+For this assignment, you will implement a single-view iPhone application using a handful of basic controls. The goal of the assignment is to become familiar with the use of XCode, basic UI elements, IBActions, IBOutlets, and the iOS documentation.
+
+View Layout
+-----------
+The view will have the following elements:
+
+Amount Borrowed
+---------------
+This will be a text field into which the user will enter the amount to be borrowed as a floating-point value (e.g., “1000.00”).
+
+Interest Rate
+-------------
+This will be a slider ranging from 0.0 to 20.0, indicating the annual percentage rate of the interest.
+
+Loan Term
+---------
+This will be a segmented control with the choices 15, 20, and 30.
+
+Taxes and Insurance
+-------------------
+This will be a switch that allows the user to select whether taxes and insurance are to be included in the monthly payment.
+
+Calculate
+---------
+This will be a button that, when pressed, will calculate the user’s monthly payments based on the values entered.
+
+Monthly Payment
+---------------
+This will be a text field that displays the monthly payment.
+
+Calculation
+-----------
+The monthly payment can be calculated as:
+M = P * (J/(1-powf(1+J,-N))) + T;
+
+Where:
+P = Principal (the amount borrowed)
+J = Monthly interest in decimal form (annual interest rate / 1200)
+N = Number of months of the loan
+T = Monthly taxes and insurance, if selected (0.1% of the amount borrowed)
+
+Tips
+----
+* The SDK documentation is your friend -- you will need it to determine how to:
+- Create an NSString with the desired formatting (consider using stringWithFormat: or initWithFormat:)
+- Write a value to a label
+- Read a value from a text field
+- Convert an NSString value to a float (consider using floatValue)
+- Read a value from a slider
+- Determine which segment of a segmented control is selected
+- Determine the setting of a switch
