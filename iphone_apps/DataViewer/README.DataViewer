@@ -1,0 +1,22 @@
+Description
+===========
+You will implement a multi-view iOS project with simple controls and an underlying Objective-C model. The goal of the assignment is to learn about programming in an MVC framework while using some new elements of the SDK including modal views and alerts.
+
+Model
+=====
+Your program will implement an objective-C class that represents an object of your choosing -- it can be a DVD, Elephant, Car, or Anything Else. Each object should have at least 3 attributes (represented by instance variables). At least 1 ivar must be an object (e.g., an NSString), and you must have at least two different types of ivars. Each class should define a designated initializer that configures all ivars, and a simple init method which sets all ivars to some default value.
+Your application must maintain a collection of these objects, which can either be a distinct class that you define or be a simple NSArray or NSMutableArray.
+
+Primary View
+============
+Your primary view should initially show the first object in the collection, and allow the user to navigate between objects using buttons. If the user presses the "back" button while on the first object, or presses the "next" button while on the last object, an alert should be shown informing the user of their invalid selection. A third button should be provided that will take the user to an alternate view.
+
+Alternate View
+==============
+The alternate view will present at least 3 statistics about the data. These can be things like the total number of objects, or the minimum, maximum, or average of some attribute across all instances.
+
+Additional
+==========
+Add support to the interface for the user to modify the values in place. For example, you might show a BOOL field using a switch -- when the user changes the switch value, update the referenced object at the same time.
+Add support to the interface for the user to add new records to the collection from within the application.
+
